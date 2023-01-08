@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Javascript - Casting</title>
-</head>
-<script>
-    var variavel1 = prompt('Digite um número: ')
-    //var variavel2 = prompt('Digite outro número: ')
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Casting</title>
+    </head>
+    <script>
+        var variavel1 = prompt('Digite um número: ')
+        //var variavel2 = prompt('Digite outro número: ')
 
-    /*Por padrão as entradas são recebidas como string que pode ser convertidas pelo Javascript, 
-    dependendo do contexto*/
+        /*Por padrão as entradas são recebidas como string que pode ser convertidas pelo Javascript, 
+        dependendo do contexto*/
 
-    /*No contexto abaixo a saída no navegador informando os valores 9 e 10, 
-    seria 910 ('9' + '10'), pois são recebidos como string*/
+        /*No contexto abaixo a saída no navegador informando os valores 9 e 10, 
+        seria 910 ('9' + '10'), pois são recebidos como string*/
 
-    //document.write(variavel1 + variavel2)
+        //document.write(variavel1 + variavel2)
 
-    /*Informando o valor 7 no navegador, o javascript irá fazer uma comparação entre dois números ('7' e 7),
-    resultando em verdadeir/o*/
-    
-    /*if(variavel1 == 7){
-        document.write('Verdadeiro')
-    } else{
-        document.write('Falso')
-    }*/
-
-    /*No contexto abaixo informando o valor 7, retornaria falso, pois o operador === compara se os valores 
-    são iguais e do mesmo tipo, porém fazendo um casting implícito o resultado seria verdadeiro*/
-
-    
-    variavel1 = parseInt(variavel1)
-    
-    if(variavel1 === 7){
-        document.write('Verdadeiro')
-    } else{
-        document.write('Falso')
-    }
-
-    /*if(variavel1 == variavel2){
-
-    } else {
+        /*Informando o valor 7 no navegador, o javascript irá fazer uma comparação entre dois números ('7' e 7),
+        resultando em verdadeir/o*/
         
-    }*/
+        /*if(variavel1 == 7){
+            document.write('Verdadeiro')
+        } else{
+            document.write('Falso')
+        }*/
 
-    
+        /*No contexto abaixo informando o valor 7, retornaria falso, pois o operador === compara se os valores 
+        são iguais e do mesmo tipo, porém fazendo um casting implícito o resultado seria verdadeiro*/
 
-</script>
-<body>
-    
-</body>
+        
+        variavel1 = parseInt(variavel1)
+        
+        if(variavel1 === 7){
+            document.write('Verdadeiro')
+        } else{
+            document.write('Falso')
+        }
+
+        /*if(variavel1 == variavel2){
+
+        } else {
+            
+        }*/
+
+        
+
+    </script>
+    <body>
+        
+    </body>
 </html>
