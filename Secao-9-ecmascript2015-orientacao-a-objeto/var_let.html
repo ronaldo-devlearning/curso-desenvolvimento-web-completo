@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - ECMAscript 2015 (ES6) e Orientação a Objeto</title>
+        <script>
+            //3 escopos: global, função e bloco
+
+            /*Variáveis criadas com o operador var, no interior de blocos, dentro de funções, são elevadas 
+            ao escopo da função e não apenas ao bloco desta*/ 
+            
+            /*function x(){               
+                if(true){
+                    var serie = 'The Walking Dead'
+                }
+            }
+
+            x()*/
+
+            /*Variáveis criadas com o operador var, no interior de blocos dentro do escopo global, 
+            são elevadas a variáveis de escopo global*/ 
+            /*if(true){
+                var serie = 'The Walking Dead'
+                x()
+                console.log(serie)    
+            }*/
+
+            /*Variáveis criadas com o operador let faz com que a variável preserve seu escopo ao 
+            contexto em que foi declarada*/
+            if(true){
+                let serie = 'Friends'
+                //console.log(serie)
+            }
+
+            console.log(serie)
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
